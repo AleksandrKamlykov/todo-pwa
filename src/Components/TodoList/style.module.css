@@ -1,0 +1,65 @@
+.todoWrapper{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item{
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template: 80px / 50px 1fr 50px 50px;
+    align-items: center;
+    background-color: #333333;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px rgba(70,70,70,0.7);
+    transition: .3s;
+}
+
+.doneBtn,.cancelBtn,.importantBtn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.item> p{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    transition: .3s;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+label>input{
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+}
+
+.important{
+    color: goldenrod !important;
+   font-size: 22px!important;
+    transition: .3s;
+}
+
+.done{
+    text-decoration: line-through;
+    font-size: 18px!important;
+    opacity: .8;
+}
+
+.checked{
+    opacity: .9;
+    transform: scale(.9);
+}
+

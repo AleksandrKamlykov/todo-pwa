@@ -1,0 +1,13 @@
+.App {
+
+  min-height: 100vh;
+}
+
+.light{
+background: rgb(199,105,231);
+background: linear-gradient(0deg, rgba(199,105,231,1) 0%, rgba(202,132,244,1) 50%, rgba(204,141,251,1) 100%);
+}
+.dark{
+  background: rgb(138,1,185);
+  background: linear-gradient(0deg, rgba(138,1,185,1) 0%, rgba(159,48,224,1) 50%, rgba(166,61,245,1) 100%);
+}
