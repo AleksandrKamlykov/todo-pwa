@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/todo-pwa/static/css/main.570c6d04.css",
-    "main.js": "/todo-pwa/static/js/main.d4f005be.js",
+    "main.js": "/todo-pwa/static/js/main.fcbd17fd.js",
     "service-worker.js": "/todo-pwa/service-worker.js",
     "static/media/logo.svg": "/todo-pwa/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
     "static/media/todomvc.svg": "/todo-pwa/static/media/todomvc.9cf2c177e8bd60e7329482ba0089ce4d.svg",
     "index.html": "/todo-pwa/index.html",
     "main.570c6d04.css.map": "/todo-pwa/static/css/main.570c6d04.css.map",
-    "main.d4f005be.js.map": "/todo-pwa/static/js/main.d4f005be.js.map"
+    "main.fcbd17fd.js.map": "/todo-pwa/static/js/main.fcbd17fd.js.map"
   },
   "entrypoints": [
     "static/css/main.570c6d04.css",
-    "static/js/main.d4f005be.js"
+    "static/js/main.fcbd17fd.js"
   ]
 }
