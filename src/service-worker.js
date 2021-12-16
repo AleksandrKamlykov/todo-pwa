@@ -78,6 +78,8 @@ const assetUrls = [
     '/public/index.html',
     '/src/index.js',
     '/src/app.js',
+    '/src/service-worker.js',
+    '/src/serviceWorkerRegistration.js',
     '/src/App.module.css',
     '/src/img/cancel.png',
     '/src/img/caution.png',
