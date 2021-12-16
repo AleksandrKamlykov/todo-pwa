@@ -2,7 +2,8 @@ import React from "react";
 import './style.css'
 import logo from '../../img/todomvc.svg'
 
-export const Header =({setDarkTheme, darkTheme})=>{
+export const Header =({changeTheme,darkTheme})=>{
+
 
     return(
         <header>
@@ -13,8 +14,8 @@ export const Header =({setDarkTheme, darkTheme})=>{
             <div className={'ThemeTogglerBlock'}>
                 <span>Сменить тему</span>
                 <div className={'ThemeToggler'}>
-                    <input onChange={()=>setDarkTheme(!darkTheme)} type="checkbox" name="themeToggler" id="toggler" />
-                    <label htmlFor="toggler" />
+                    <input  checked={darkTheme} onChange={changeTheme} type="checkbox" name="themeToggler" id="toggler" />
+                    <label  htmlFor="toggler" />
                 </div>
             </div>
         </header>

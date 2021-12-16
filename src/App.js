@@ -8,6 +8,7 @@ import {FormTodo} from "./Components/FormTodo/FormTodo";
 
 function App() {
     const [darkTheme, setDarkTheme] = useState(false)
+
  let cls =[classes.App]
     if(darkTheme){
         cls.push(classes.dark)
@@ -19,14 +20,25 @@ const [todoArr, setTodoArr] = useState([])
 
     useEffect(()=>{
         const storage = JSON.parse(localStorage.getItem('postArr'))
+        const theme = localStorage.getItem('theme')
         if(storage){
             setTodoArr([...storage])
         }
+        if(theme){
+            setDarkTheme(JSON.parse(theme))
+        }
     },[])
+useEffect(()=>{
+    localStorage.setItem('theme', JSON.stringify(darkTheme));
+},[darkTheme])
+    function changeTheme(){
+        setDarkTheme(prev => !prev);
+
+    }
 
   return (
     <div   className={cls.join(' ')}>
-    <Header darkTheme={darkTheme} setDarkTheme={setDarkTheme}/>
+    <Header darkTheme={darkTheme} changeTheme={changeTheme}/>
         <FormTodo setTodoArr={setTodoArr} todoArr={todoArr}/>
         <TodoList setTodoArr={setTodoArr} todoArr={todoArr}/>
     </div>
