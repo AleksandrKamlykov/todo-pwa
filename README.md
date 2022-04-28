@@ -1,3 +1,3 @@
-# todo-pwa
-This app it's my first test PWA
- Exaple [https://aleksandrkamlykov.github.io/todo-pwa/]
+# Todo-pwa
+This app it's my first test PWA Example 
+[demo](https://aleksandrkamlykov.github.io/todo-pwa/)
